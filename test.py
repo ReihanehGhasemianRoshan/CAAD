@@ -63,7 +63,7 @@ if mdl != 'caad':
 else:
     netD = Discriminator_nodropout().to(device)
 netD.load_state_dict(torch.load(
-    cwd+'/trainedmodels/{}/{}.pth'.format(dataset, mdl)))
+    'C:\Users\EZ-Tech\Documents\GitHub\CAAD\trainedmodels\mnist\caad.pth'.format(dataset, mdl)))
 netD.eval()
 
 if mdl != 'caad':
